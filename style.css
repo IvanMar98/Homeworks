@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "section";
+    grid-template-rows: 4rem 3fr;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+    grid-area: title;
+
+}
+.tasks{
+    grid-area: section;
+}
+
+.tasks{
+    width: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "addTask addTask"
+    "task taskComplete";
+    grid-template-rows: 4rem 3fr;
+
+}
+.addTask{
+    grid-area: addTask;
+}
+
+.task{
+    grid-area: task;
+}
+.taskComplete{
+    grid-area: taskComplete;
+}
+
+.task{
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(0,0,0),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.taskComplete{
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(0,0,0),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+ul{
+    list-style: none;
+}
